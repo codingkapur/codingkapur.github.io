@@ -1,0 +1,2 @@
+(this["webpackJsonpraghavkapur-dot-com"]=this["webpackJsonpraghavkapur-dot-com"]||[]).push([[0],{10:function(e,t,c){"use strict";c.r(t);var n=c(1),r=c.n(n),a=c(3),o=c.n(a),s=(c(8),c(0));var i=function(){return Object(s.jsx)("div",{className:"App",children:Object(s.jsx)("h1",{children:"Welcome"})})};o.a.render(Object(s.jsx)(r.a.StrictMode,{children:Object(s.jsx)(i,{})}),document.getElementById("root"))},8:function(e,t,c){}},[[10,1,2]]]);
+//# sourceMappingURL=main.e8783272.chunk.js.map
