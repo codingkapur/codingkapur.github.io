@@ -10,6 +10,9 @@
     padding: 1rem;
     font-size: 1.5rem;
 }
+.navbar__logo {
+    text-transform: uppercase;
+}
 /* LINKS CONTAINER */
 .navbar__links--container {
     display: flex;
@@ -35,8 +38,13 @@
     }
 }
 .navbar__link {
+    font-size: 1.2rem;
     margin-right: 0.5rem;
-    border: 1px solid #123;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.navbar__link:hover, .navbar__link:active{
+    transform: scale(1.1);
 }
 .hidden {
     display: none;

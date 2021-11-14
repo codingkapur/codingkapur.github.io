@@ -10,4 +10,5 @@ body {
   color: #fff;
   font-family: 'Anton', sans-serif;
   min-height: 100vh;
+  position: relative;
 }
