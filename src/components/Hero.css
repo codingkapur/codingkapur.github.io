@@ -12,7 +12,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.453);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.556), rgba(0, 0, 0, 0.289));
   z-index: 1;
 }
 .hero__titles--container {
