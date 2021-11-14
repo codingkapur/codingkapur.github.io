@@ -1,8 +1,9 @@
 import "./Navbar.css";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
 import { useGlobalContext } from "../context";
+
 const Navbar = () => {
-  const { isSidebarOpen, openSidebar } = useGlobalContext();
+  const {  openSidebar } = useGlobalContext();
 
   return (
     <nav className="navbar__container">
@@ -13,7 +14,10 @@ const Navbar = () => {
         <p className="navbar__link">Blog</p>
         <p className="navbar__link">Contact</p>
       </div>
-      <FaBars className="sidebar__toggle--btn open-sidebar" onClick={openSidebar}/>
+      <FaBars
+        className="sidebar__toggle--btn open-sidebar"
+        onClick={openSidebar}
+      />
     </nav>
   );
 };
