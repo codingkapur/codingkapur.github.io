@@ -1,13 +1,16 @@
 .sidebar__container {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   top: 0;
+  left: 0;
   z-index: 30;
   background-color: #000;
   display: flex;
   flex-direction: column;
   border: 1px solid #fff;
+  transform: translate(-100%);
+  transition: 0.3s ease-in;
 }
 .sidebar__top--container {
   height: 10vh;
@@ -45,7 +48,6 @@
     background-color: rgb(255, 255, 255);
     color: #000;
 }
-.hidden {
-    display: none;
-    width: 0%;
+.show-sidebar {
+  transform: translate(0);
 }

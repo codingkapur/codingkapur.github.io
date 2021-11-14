@@ -7,7 +7,7 @@ const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
 
   return (
-    <div className={isSidebarOpen? "sidebar__container" : "sidebar__container hidden"}>
+    <div className={isSidebarOpen? "sidebar__container show-sidebar" : "sidebar__container"}>
       <div className="sidebar__top--container">
         <p className="sidebar__logo">Raghav Kapur</p>
         <FaTimes className="close-sidebar__btn" onClick={closeSidebar}/>
