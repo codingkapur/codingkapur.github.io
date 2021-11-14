@@ -1,0 +1,43 @@
+/* MAIN CONTAINER */
+.navbar__container {
+    height: 10vh;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+/* LINKS CONTAINER */
+.navbar__links--container {
+    display: flex;
+}
+/* SIDEBAR OPEN/CLOSE BUTTONS */
+.sidebar__toggle--btn {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sidebar__toggle--btn:hover {
+    transform: scale(1.1);
+}
+/* RESPONSIVE NAVBAR */
+@media screen and (max-width: 500px){
+    .navbar__links--container {
+        display: none;
+    }
+    .sidebar__toggle--btn {
+        display: block;
+    }
+}
+.navbar__link {
+    margin-right: 0.5rem;
+    border: 1px solid #123;
+}
+.hidden {
+    display: none;
+}
