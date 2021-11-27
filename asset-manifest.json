@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8b6469f.chunk.css",
-    "main.js": "/static/js/main.eea41f7d.chunk.js",
-    "main.js.map": "/static/js/main.eea41f7d.chunk.js.map",
+    "main.css": "/static/css/main.edcf0e7f.chunk.css",
+    "main.js": "/static/js/main.d06c0451.chunk.js",
+    "main.js.map": "/static/js/main.d06c0451.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f704bc18.js",
     "runtime-main.js.map": "/static/js/runtime-main.f704bc18.js.map",
     "static/js/2.fdc2f564.chunk.js": "/static/js/2.fdc2f564.chunk.js",
     "static/js/2.fdc2f564.chunk.js.map": "/static/js/2.fdc2f564.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e8b6469f.chunk.css.map": "/static/css/main.e8b6469f.chunk.css.map",
+    "static/css/main.edcf0e7f.chunk.css.map": "/static/css/main.edcf0e7f.chunk.css.map",
     "static/js/2.fdc2f564.chunk.js.LICENSE.txt": "/static/js/2.fdc2f564.chunk.js.LICENSE.txt",
     "static/media/Hero.css": "/static/media/hero-bg2.55393ba3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f704bc18.js",
     "static/js/2.fdc2f564.chunk.js",
-    "static/css/main.e8b6469f.chunk.css",
-    "static/js/main.eea41f7d.chunk.js"
+    "static/css/main.edcf0e7f.chunk.css",
+    "static/js/main.d06c0451.chunk.js"
   ]
 }
