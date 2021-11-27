@@ -11,10 +11,9 @@
   border: 1px solid #fff;
   transform: translate(-100%);
   transition: 0.3s ease-in;
-  background: linear-gradient(90deg, #000000, #3e5e5d, #0e1418, #000000);
+  background: linear-gradient(90deg,rgb(0, 60, 119), rgb(158, 0, 0) );
   background-repeat: no-repeat;
   background-size: 400% 300%;
-  animation: gradient 12s ease infinite;
 }
 @keyframes gradient {
   0% {
@@ -51,7 +50,8 @@
 .sidebar__links--container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -60,6 +60,8 @@
 .sidebar--link {
   cursor: pointer;
   padding: 1rem 1rem;
+  width: 100%;
+  text-align: center;
 }
 .sidebar--link:hover {
   background-color: rgb(255, 255, 255);
@@ -67,4 +69,6 @@
 }
 .show-sidebar {
   transform: translate(0);
+  animation: gradient 1s ease;
+
 }

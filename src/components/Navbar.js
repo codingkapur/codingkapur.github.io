@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="navbar__links--container">
         <p className="navbar__link">About</p>
         <p className="navbar__link">Projects</p>
-        <p className="navbar__link">Blog</p>
+        <p className="navbar__link">Services</p>
         <p className="navbar__link">Contact</p>
       </div>
       <FaBars

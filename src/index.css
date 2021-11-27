@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,21 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   min-height: 100vh;
+  width: 100%;
   position: relative;
+}
+.app__container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background: url(./assets/hero-bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }

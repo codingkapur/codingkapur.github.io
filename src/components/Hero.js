@@ -8,13 +8,12 @@ const Hero = () => {
         <p className="hero__main--title">Your Vision</p>
         <p className="hero__sub--title">For the world to see</p>
         <p className="hero__info--text ">
-          Let's share your message with the world.
           Let's make the world a part of your journey.
           <br/>
           Engineering web solutions for individuals and businesses around the
           world!
         </p>
-        <p className="hero__learn-more">Learn More</p>
+        <p className="hero__learn-more-btn">Learn More</p>
       </div>
     </main>
   );
