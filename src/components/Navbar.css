@@ -1,7 +1,7 @@
 /* MAIN CONTAINER */
 .navbar__container {
     height: 10vh;
-    background-color: #fff;
+    background-color: rgb(89, 55, 242);
     color: #000;
     display: flex;
     justify-content: space-between;
@@ -10,8 +10,11 @@
     padding: 1rem;
     font-size: 1.5rem;
 }
+
 .navbar__logo {
     text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #000;
 }
 /* LINKS CONTAINER */
 .navbar__links--container {
@@ -39,12 +42,15 @@
 }
 .navbar__link {
     font-size: 1.2rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     cursor: pointer;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
 }
 .navbar__link:hover, .navbar__link:active{
     transform: scale(1.1);
+    color: #fff;
 }
 .hidden {
     display: none;

@@ -55,8 +55,10 @@
   text-align: left;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.953);
   letter-spacing: 1px;
-  
+  font-size: 1rem;
+  text-transform: uppercase;
 }
+
 .hero__learn-more-btn {
   margin-top: 1rem;
   font-size: 0.8rem;
@@ -68,7 +70,7 @@
   border-radius: 20px;
   padding: 0.5rem 0.75rem;
   color: rgb(255, 255, 255);
-  background-color: rgb(118, 0, 0);
+  background-color: rgb(89, 55, 242);
 }
 .hero__learn-more-btn:hover {
   color: rgb(255, 255, 255);
