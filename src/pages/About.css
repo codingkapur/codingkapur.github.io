@@ -8,3 +8,17 @@
   position: relative;
   z-index: 2;
 }
+@media screen and (max-width: 600px){
+  .about__page--container {
+    /* min-height: 90vh; */
+    background: none;
+  background: url(../assets/hero-bg-mobile.jpg);
+
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+  }
+}

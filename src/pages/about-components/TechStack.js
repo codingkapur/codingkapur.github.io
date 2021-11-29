@@ -1,10 +1,20 @@
 import { techStackItems } from "./data";
 import "./TechStack.css";
+import Typewriter from "typewriter-effect";
+
 
 const TechStack = () => {
   return (
     <div className="tech__container">
-      <h2 className="tech__container--title about__title">Favorite Tech:</h2>
+      <Typewriter
+          options={{
+            loop: true,
+            autoStart: true,
+            skipAddStyles: true,
+            wrapperClassName: "tech__container--title",
+            strings: ["Favorite Tech:"],
+          }}
+        />
       <div className="all__tech--container">
         {techStackItems.map((item) => {
           return (
