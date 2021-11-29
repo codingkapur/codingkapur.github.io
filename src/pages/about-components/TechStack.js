@@ -1,20 +1,31 @@
 import { techStackItems } from "./data";
 import "./TechStack.css";
-import Typewriter from "typewriter-effect";
-
+import { useEffect, useState } from "react";
 
 const TechStack = () => {
+  //Type Writer Text Effect
+  const [typetext, setTypetext] = useState("");
+  const titleString = "Tech Stack:";
+  let i = 0;
+  const speed = 150;
+  let str = "";
+
+  const typeFx = () => {
+    if (i < titleString.length) {
+      str += titleString.charAt(i)
+      setTypetext(str);
+      i++;
+      setTimeout(typeFx, speed);
+    }
+  };
+
+  useEffect(() => {
+    typeFx();
+  }, []);
+
   return (
     <div className="tech__container">
-      <Typewriter
-          options={{
-            loop: true,
-            autoStart: true,
-            skipAddStyles: true,
-            wrapperClassName: "tech__container--title",
-            strings: ["Favorite Tech:"],
-          }}
-        />
+      <h2 className="tech__container--title">{typetext}</h2>
       <div className="all__tech--container">
         {techStackItems.map((item) => {
           return (

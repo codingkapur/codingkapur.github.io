@@ -1,5 +1,4 @@
 import { BsChevronDoubleDown } from "react-icons/bs";
-import { useState } from "react";
 import { useGlobalContext } from "../../context";
 
 const BioOptions = () => {
