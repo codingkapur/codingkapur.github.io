@@ -1,0 +1,10 @@
+.about__page--container {
+  min-height: 90vh;
+  background: url(../assets/hero-bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}

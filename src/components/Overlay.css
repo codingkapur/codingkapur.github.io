@@ -1,0 +1,11 @@
+.overlay-pages {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background:linear-gradient(90deg,rgba(0, 0, 0, 0.131), rgba(255, 0, 0, 0.179));
+    filter: blur(20px);
+    z-index: -1;
+    transition: 5s ease;
+}

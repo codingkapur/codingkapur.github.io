@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -6,10 +6,11 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   color: #fff;
-  font-family: "Anton", sans-serif;
-  min-height: 100vh;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  height: 100vh;
   width: 100%;
   position: relative;
 }
@@ -29,5 +30,6 @@ a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
