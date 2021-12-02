@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf7a7069.chunk.css",
+    "main.css": "/static/css/main.6d7fc55a.chunk.css",
     "main.js": "/static/js/main.8acc9389.chunk.js",
     "main.js.map": "/static/js/main.8acc9389.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f704bc18.js",
@@ -8,14 +8,14 @@
     "static/js/2.c6ae10e2.chunk.js": "/static/js/2.c6ae10e2.chunk.js",
     "static/js/2.c6ae10e2.chunk.js.map": "/static/js/2.c6ae10e2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.bf7a7069.chunk.css.map": "/static/css/main.bf7a7069.chunk.css.map",
+    "static/css/main.6d7fc55a.chunk.css.map": "/static/css/main.6d7fc55a.chunk.css.map",
     "static/js/2.c6ae10e2.chunk.js.LICENSE.txt": "/static/js/2.c6ae10e2.chunk.js.LICENSE.txt",
     "static/media/About.css": "/static/media/hero-bg2.55393ba3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f704bc18.js",
     "static/js/2.c6ae10e2.chunk.js",
-    "static/css/main.bf7a7069.chunk.css",
+    "static/css/main.6d7fc55a.chunk.css",
     "static/js/main.8acc9389.chunk.js"
   ]
 }
