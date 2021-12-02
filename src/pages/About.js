@@ -4,7 +4,7 @@ import Bio from "./about-components/Bio";
 
 const About = () => {
   return (
-    <section className="about__page--container">
+    <section className="about__page--container page__container">
       <TechStack />
       <Bio />
     </section>

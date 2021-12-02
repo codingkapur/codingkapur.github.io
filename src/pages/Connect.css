@@ -1,0 +1,122 @@
+.connect__page--container {
+  background: none;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.connect__page--title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 2rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.453);
+
+}
+.connect__page--title span {
+    color:rgb(89, 55, 242);
+}
+.connect__page--subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  padding: 0 2rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.453);
+
+}
+.connect__container {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.login-form-space {
+  display: none;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border: 1px solid #fff;
+}
+
+.email__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.email__title {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+.span1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    color:rgb(89, 55, 242);
+}
+.span2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:rgb(89, 55, 242);
+}
+/* button styles under class btn declared in hero.css */
+
+.connect__social--container {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.social__connect--main {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.social__connect--title {
+  text-align: center;
+}
+@media screen and (min-width: 650px) {
+  .connect__page--container {
+    background-color: rgba(0, 0, 0, 0.576);
+  }
+  .connect__page--title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .connect__container {
+    border: 1px solid #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    flex-direction: inherit;
+    align-items: inherit;
+    padding: 1rem;
+  }
+  .login-form-space {
+    display: block;
+  }
+  .email__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .email__title {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 400;
+  }
+  .connect__social--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

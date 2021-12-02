@@ -31,9 +31,35 @@ const AppProvider = ({ children }) => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
+  const externalRedirect = (e) => {
+    console.log(e.currentTarget.id);
+    if (e.currentTarget.id === "linkedin") {
+      // window.location.href = "https://www.linkedin.com/in/raghavkapur/";
+      window.open("https://www.linkedin.com/in/raghavkapur/", "_blank");
+    }
+    if (e.currentTarget.id === "github") {
+      window.open("https://github.com/codingkapur", "_blank");
+    }
+    if (e.currentTarget.id === "youtube") {
+      window.open("https://youtube.com/raghavkapur", "_blank");
+    }
+    if (e.currentTarget.id === "instagram") {
+      window.open("https://instagram.com/misterkapur", "_blank");
+    }
+  };
 
   return (
-    <AppContext.Provider value={{ isSidebarOpen, openSidebar, closeSidebar, activeOption, setActiveOption, handleOptionClick }}>
+    <AppContext.Provider
+      value={{
+        isSidebarOpen,
+        openSidebar,
+        closeSidebar,
+        activeOption,
+        setActiveOption,
+        handleOptionClick,
+        externalRedirect
+      }}
+    >
       {children}
     </AppContext.Provider>
   );
