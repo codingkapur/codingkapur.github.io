@@ -6,13 +6,33 @@ import {
   AiFillGithub,
   AiFillYoutube,
 } from "react-icons/ai";
-
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 
 const Sidebar = () => {
   //Values and Functions
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
+
+  const externalRedirect = (e) => {
+    console.log(e.currentTarget.id)
+    if(e.currentTarget.id==="linkedin"){
+      // window.location.href = "https://www.linkedin.com/in/raghavkapur/";
+      window.open('https://www.linkedin.com/in/raghavkapur/', '_blank');
+    }
+    if(e.currentTarget.id==="github"){
+      window.open('https://github.com/codingkapur', '_blank');
+
+    }
+    if(e.currentTarget.id==="youtube"){
+      window.open('https://youtube.com/raghavkapur', '_blank');
+
+    }
+    if(e.currentTarget.id==="instagram"){
+      window.open('https://instagram.com/misterkapur', '_blank');
+
+    }
+  }
 
   return (
     <div
@@ -41,10 +61,10 @@ const Sidebar = () => {
         </Link>
       </div>
       <div className="social__links--container">
-        <AiFillLinkedin className="social__link" />
-        <AiFillGithub className="social__link" />
-        <AiFillYoutube className="social__link" />
-        <AiFillInstagram className="social__link" />
+        <p onClick={externalRedirect}id="linkedin"><AiFillLinkedin className="social__link" /></p>
+        <p onClick={externalRedirect}id="github"><AiFillGithub className="social__link"/></p>
+        <p onClick={externalRedirect}id="youtube"><AiFillYoutube className="social__link"/></p>
+        <p onClick={externalRedirect}id="instagram"><AiFillInstagram className="social__link"/></p>
       </div>
     </div>
   );

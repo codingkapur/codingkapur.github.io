@@ -1,6 +1,16 @@
+import { useGlobalContext } from "../../../context";
+
 const Bio2 = () => {
+  const { activeOption } = useGlobalContext();
+
   return (
-    <div className="bio__component--container">
+    <div
+      className={
+        activeOption ==="2"
+          ? "bio__component--container active"
+          : "bio__component--container"
+      }
+    >
       <p className="bio__text--field">
         The way we interact with each other in society, and reality itself, is
         changing at an incredible pace. Compared to 20 years ago, it is safe to

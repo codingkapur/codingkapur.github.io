@@ -10,9 +10,9 @@
 .about--me__title {
   grid-column-start: 1;
   grid-column-end: -1;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-size: 1.5rem;
-  color:rgb(89, 55, 242);
+  color: rgb(89, 55, 242);
 }
 .bio__text--field {
   margin-bottom: 1rem;
@@ -21,12 +21,15 @@
 .current__bio--option {
   display: flex;
   align-items: center;
-  justify-content:flex-start;
-  border: 1px solid #fff;
+  justify-content: flex-start;
+  border: 1px solid rgb(89, 55, 242);
   border-radius: 10px;
   padding: 1rem;
   height: 60vh;
   align-self: center;
+  background-color: rgba(0, 0, 0, 0.501);
+  position: relative;
+  overflow: hidden;
 }
 
 /* BIO OPTION INIDCATOR */
@@ -40,7 +43,7 @@
   justify-content: space-between;
   padding: 1rem 0;
   align-self: center;
-
+  background-color: rgba(0, 0, 0, 0.83);
 }
 .bio__option {
   cursor: pointer;
@@ -93,23 +96,34 @@
 /* -----BIO OPTIONS----- */
 /* --------------------- */
 
+/* BIO SECTION SLIDER */
 
-/* BIO OPTION TYPEWRITER */
-.type-text-wrapper {
-  height: 100%;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #fff;
+.bio__component--container {
+  /* border: 1px solid #fff; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
 }
-.type-text--cursor {
-  font-size: 0.2rem;;
+.bio__component--container.active {
+  animation: slideIn 1s ease;
+  opacity: 1;
+  transform: translate(-50%, -50%);
 }
-/* BIO OPTION FAKE STORY */
-.bio__fake--story {
-  font-weight: 300;
-  background-color: rgb(0, 0, 0);
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: justify;
-  text-transform: uppercase;
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
