@@ -4,14 +4,15 @@
   right: -100%;
   padding: 1rem;
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
   max-width: 500px;
   background-color: rgba(0, 0, 0, 0.118);
   backdrop-filter: blur(30px);
   transition: all 1s ease;
   z-index: 3;
-  box-shadow: 0px 10px 5px rgba(255, 255, 255, 0.289),
-    0px -5px 5px rgba(255, 255, 255, 0.268);
+  box-shadow: -3px -2px 12px rgba(107, 107, 107, 0.665);
+  border: 1px rgba(255, 255, 255, 0.172);
+  border-style:solid;
 }
 @media screen and (max-width: 650px) {
   .mail__form--container {
@@ -21,7 +22,7 @@
 }
 
 .mail__form--container.active {
-  right: 0%;
+  right: 10%;
   z-index: 500;
 }
 .form__title {

@@ -27,6 +27,7 @@ a {
 @media screen and (min-width: 1200px) {
   body {
     background: url(./assets/hero-bg2.jpg);
+    backdrop-filter: blur(3px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
