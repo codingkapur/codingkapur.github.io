@@ -1,6 +1,6 @@
 .connect__page--container {
   background: none;
-  background-color: rgba(0, 0, 0, 0.74);
+  /* background-color: rgba(0, 0, 0, 0.74); */
   position: relative;
   overflow:hidden;
 }
@@ -92,10 +92,24 @@
   color: rgb(89, 55, 242);
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1199px){
   .connect__page--container {
-    background-color: rgba(0, 0, 0, 0.576);
+    /* background-color: rgba(0, 0, 0, 0.576); */
+    background: none;
   }
+}
+
+@media screen and (min-width: 650px) {
+
+  .connect__page--container {
+    background: url(../assets/hero-bg2.jpg);
+    background-size:cover;
+    background-position: center;
+    /* background-color: rgba(0, 0, 0, 0.74); */
+    position: relative;
+    overflow:hidden;
+  }
+  
   .connect__page--title {
     text-align: center;
     text-transform: uppercase;
@@ -140,5 +154,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+  }
+  .social__connect--title {
+    text-align: left;
   }
 }

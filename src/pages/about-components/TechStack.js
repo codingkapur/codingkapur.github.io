@@ -12,7 +12,7 @@ const TechStack = () => {
 
   const typeFx = () => {
     if (i < titleString.length) {
-      str += titleString.charAt(i)
+      str += titleString.charAt(i);
       setTypetext(str);
       i++;
       setTimeout(typeFx, speed);

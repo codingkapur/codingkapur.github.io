@@ -4,8 +4,8 @@
     right: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 128, 255, 0.412);
+    background-color: rgba(0, 38, 252, 0.076);
     backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
     z-index: 2;
 }
