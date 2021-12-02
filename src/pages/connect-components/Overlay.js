@@ -2,7 +2,7 @@ import './Overlay.css'
 import { useGlobalContext } from '../../context';
 const Overlay = () => {
     const {closeMailForm} = useGlobalContext();
-    return <div className="overlay" onClick={closeMailForm}>
+    return <div className="overlay-mail" onClick={closeMailForm}>
 
     </div>
 }
