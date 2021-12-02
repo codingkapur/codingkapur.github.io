@@ -14,8 +14,8 @@ const Connect = () => {
         Let's Get in <span>touch</span>
       </h1>
       <p className="connect__page--subtitle">
-        Humans have come so far by cooperting and collaborating with each other.
-        Together we can achieve anything.
+        From inventing the wheel to spaceships, we have come a long way by
+        co-operating and collaborating with each other. Let's build something together.
       </p>
       <div className="connect__container">
         {/* Connect container child one */}
@@ -43,10 +43,10 @@ const Connect = () => {
             <p className="social__connect--title">
               Check out some photos and also send me a DM on Instagram.
             </p>
-
-            <p onClick={externalRedirect} id="github">
-              <AiFillGithub className="social__link--connect" />
+            <p onClick={externalRedirect} id="instagram">
+              <AiFillInstagram className="social__link--connect" />
             </p>
+
             <p className="social__connect--title">
               Leave a comment on one of my old youtube videos. I probably won't
               see it.
@@ -58,14 +58,13 @@ const Connect = () => {
             <p className="social__connect--title">
               Hit me up on GitHub? Or any of the above..
             </p>
-
-            <p onClick={externalRedirect} id="instagram">
-              <AiFillInstagram className="social__link--connect" />
+            <p onClick={externalRedirect} id="github">
+              <AiFillGithub className="social__link--connect" />
             </p>
           </div>
         </div>
         {/* Connect container child two */}
-        <div className="login-form-space">123</div>
+        <div className="login-form-space"></div>
       </div>
     </section>
   );
