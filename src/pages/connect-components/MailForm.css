@@ -1,0 +1,91 @@
+.mail__form--container {
+    position: absolute;
+    bottom: 0%;
+    right: -100%;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(0, 0, 0);
+    transition: all 1s ease;
+    z-index: 3;
+}
+@media screen and (max-width: 650px){
+    .mail__form--container {
+        position: absolute;
+        top: 20%;
+        bottom:unset;
+        right: -100%;
+        border: 1px solid #fff;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        background-color: rgb(0, 0, 0);
+        transition: all 1s ease;
+        z-index: 3;
+    }
+}
+
+.mail__form--container.active {
+    right: 0%;
+    z-index: 500;
+} 
+.form__title {
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.close-mail-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.close-mail-btn:hover, .close-mail-btn:active {
+    color:rgb(89, 55, 242);
+    transform: scale(1.1) rotate(360deg);
+}
+
+.form-control {
+    margin: 0.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.form-control__input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+}
+.form-control__label {
+    color: rgb(255, 255, 255);
+    margin: 0.5rem; 
+    text-transform: uppercase;
+}
+.form-control__label span{
+    transition: 0.3s ease;
+}
+
+.form-control__input-area {
+    height: 75px;
+}
+.form-control__input:focus {
+    outline: 2px solid rgb(89, 55, 242);
+}
+.form-control__input:focus + .form-control__label span{
+    color:rgb(89, 55, 242);
+    font-size: 1rem;
+}
+.send-mail-btn {
+    outline: none;
+    border: none;
+}

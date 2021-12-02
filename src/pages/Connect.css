@@ -1,6 +1,8 @@
 .connect__page--container {
   background: none;
   background-color: rgba(0, 0, 0, 0.74);
+  position: relative;
+  overflow:hidden;
 }
 
 .connect__page--title {
@@ -24,16 +26,12 @@
 
 .connect__container {
   /* border: 1px solid #fff; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .login-form-space {
   display: none;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  /* border: 1px solid #fff; */
+  width: 100%;
 }
 
 .email__container {
@@ -93,6 +91,7 @@
 .social__link--connect:active {
   color: rgb(89, 55, 242);
 }
+
 @media screen and (min-width: 650px) {
   .connect__page--container {
     background-color: rgba(0, 0, 0, 0.576);
@@ -111,7 +110,6 @@
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.453);
   }
   .connect__container {
-    /* border: 1px solid #fff; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
@@ -121,6 +119,9 @@
   }
   .login-form-space {
     display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem 0;
   }
   .email__container {
     display: flex;

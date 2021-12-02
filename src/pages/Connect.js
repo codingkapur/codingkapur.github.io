@@ -1,24 +1,46 @@
 import "./Connect.css";
+import MailForm from "./connect-components/MailForm";
+import Overlay from './connect-components/Overlay';
 import {
   AiFillLinkedin,
   AiFillInstagram,
   AiFillGithub,
   AiFillYoutube,
 } from "react-icons/ai";
+import { useEffect, useState } from "react";
 import { useGlobalContext } from "../context";
 const Connect = () => {
-  const { externalRedirect } = useGlobalContext();
+  const { mailFormOpen, externalRedirect, openMailForm } = useGlobalContext();
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  //Get Screen width:
+  const getWidth = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", getWidth);
+    return () => {
+      window.removeEventListener("resize", getWidth);
+    };
+  });
+
   return (
     <section className="page__container connect__page--container">
+      {screenWidth < 650 ? (
+        <>
+            {mailFormOpen? <Overlay />: null}
+           <MailForm />
+        </>
+      ) : null}
       <h1 className="connect__page--title">
         Let's Get in <span>touch</span>
       </h1>
       <p className="connect__page--subtitle">
         From inventing the wheel to spaceships, we have come a long way by
-        co-operating and collaborating with each other. Let's build something together.
+        co-operating and collaborating with each other. Let's build something
+        together.
       </p>
       <div className="connect__container">
-        {/* Connect container child one */}
         <div className="connect__links">
           <div className="email__container">
             <h2 className="email__title">
@@ -28,7 +50,9 @@ const Connect = () => {
               <span className="span1">slide </span>into my{" "}
               <span className="span2">inbox</span>.
             </h2>
-            <p className="email__form--btn btn">Send an Email</p>
+            <p className="email__form--btn btn" onClick={openMailForm}>
+              Send an Email
+            </p>
           </div>
           <div className="connect__social--container">
             <p className="social__connect--main">
@@ -63,8 +87,9 @@ const Connect = () => {
             </p>
           </div>
         </div>
-        {/* Connect container child two */}
-        <div className="login-form-space"></div>
+        <div className="login-form-space">
+          {screenWidth > 650 ? <MailForm /> : null}
+        </div>
       </div>
     </section>
   );

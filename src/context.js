@@ -7,6 +7,8 @@ const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
   const [activeOption, setActiveOption] = useState("1");
+  const [mailFormOpen, setMailFormOpen] = useState(false);
+
 
   const checkWidth = () => {
     setWidth(window.innerWidth);
@@ -48,6 +50,13 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  const openMailForm = () => {
+    setMailFormOpen(true);
+  }
+  const closeMailForm = () => {
+    setMailFormOpen(false);
+
+  }
   return (
     <AppContext.Provider
       value={{
@@ -57,7 +66,10 @@ const AppProvider = ({ children }) => {
         activeOption,
         setActiveOption,
         handleOptionClick,
-        externalRedirect
+        externalRedirect,
+        mailFormOpen,
+        openMailForm,
+        closeMailForm, 
       }}
     >
       {children}
