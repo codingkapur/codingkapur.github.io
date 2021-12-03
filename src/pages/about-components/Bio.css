@@ -1,11 +1,18 @@
 .bio__container {
   min-height: 100vh;
+  width: 100%;
   display: grid;
   grid-template-columns: 9fr 1fr;
   gap: 1rem;
   place-content: center;
   padding: 1rem;
   border: 1px solid #fff;
+}
+
+@media screen and (max-width: 500px) {
+  .bio__container {
+    width: 95%;
+  }
 }
 .about--me__title {
   grid-column-start: 1;
@@ -46,7 +53,6 @@
   align-self: center;
   background-color: rgba(0, 0, 0, 0.501);
   backdrop-filter: blur(3px);
-
 }
 .bio__option {
   cursor: pointer;

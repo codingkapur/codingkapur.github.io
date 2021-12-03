@@ -20,10 +20,7 @@ const Bio1 = () => {
         litigator.
       </p>
       <p className="bio__text--field">
-        But I find technology and software to be extremely fascinating.
-      </p>
-      <p className="bio__text--field">
-        As I witness the impact of technology on my daily life, I cannot help
+        I find technology and software to be extremely fascinating and as I witness the impact of technology on my daily life, I cannot help
         but imagine what the landscape will look like in the next 20 years!
       </p>
       <p className="bio__text--field-question">

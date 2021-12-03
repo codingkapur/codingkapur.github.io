@@ -1,49 +1,55 @@
-
-.tech__container{
-    min-height:87vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    margin: 1rem 0;
-    border: 1px solid rgb(89, 55, 242);
+.tech__container {
+  min-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid rgb(89, 55, 242);
+  width: 100%;
 }
 .tech__container--title {
-    text-transform: uppercase;
-    font-size: 3rem;
-    font-weight: 400;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
 }
 .all__tech--container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.213);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.213);
+  background-color: rgba(0, 0, 0, 0.631);
+  backdrop-filter: blur(10px);
+}
 
-}
-@media screen and (min-width:500px){
-    .all__tech--container {
-        display: flex;
-        grid-template-columns: none;
-        overflow: scroll;
-        border-radius: 10px;
-        max-width: 800px;
-    }
-}
-.tech__control, .trivia__control {
-    padding: 1rem;
+@media screen and (min-width: 500px) {
+  .all__tech--container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    background-color: rgba(0, 0, 0, 0.631);
-    backdrop-filter: blur(10px);
+    grid-template-columns: none;
+    overflow: scroll;
+    border-radius: 10px;
+    max-width: 800px;
+  }
+}
+
+.tech__control,
+.trivia__control {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .tech__name {
-    font-size: 4rem;
-    color: rgb(89, 55, 242);
+  font-size: 4rem;
+  color: rgb(89, 55, 242);
 }
 .tech__label {
-    font-size:1rem;
-
+  font-size: 1rem;
 }
+@media screen and (max-width: 500px) {
+    .tech__container {
+      width: 95%;
+    }
+  }

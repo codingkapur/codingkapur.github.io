@@ -1,4 +1,4 @@
-.page__container{
+.page__container {
   min-height: 90vh;
   background: url(../assets/hero-bg2.jpg);
   background-position: center;
@@ -19,4 +19,11 @@
     position: relative;
     z-index: 2;
   }
+}
+
+.about__page--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
