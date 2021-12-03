@@ -10,6 +10,7 @@
   font-size: 3rem;
   padding: 2rem;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.453);
+  
 }
 .connect__page--title span {
   color: rgb(89, 55, 242);
@@ -34,7 +35,7 @@
   width: 100%;
 }
 .connect__links {
-  border: 1px solid rgb(89, 55, 242);
+  /* border: 1px solid rgb(89, 55, 242); */
   border-radius: 10px;
   margin: 0 1rem;
   
@@ -46,7 +47,6 @@
   justify-content: center;
   border-bottom: 2px solid #fff;
   border-radius: 3px;
-
   margin: 1rem 0;
   padding: 1rem;
 }
@@ -54,6 +54,7 @@
   font-size: 1rem;
   text-align: center;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 .span1 {
   text-transform: uppercase;
@@ -69,6 +70,9 @@
 }
 
 /* button styles under class btn declared in hero.css */
+.email__form--btn {
+  margin: 1rem 0;
+}
 
 .connect__social--container {
   /* border: 1px solid rgb(89, 55, 242); */
@@ -83,6 +87,7 @@
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 .social__connect--title {
   text-align: center;
@@ -167,7 +172,8 @@
 @media screen and (min-width: 1100px){
   .connect__page--container {
     background: none;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.159);
+    backdrop-filter: blur(5px);
 
   }
 }

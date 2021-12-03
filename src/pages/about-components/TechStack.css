@@ -18,6 +18,8 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.213);
+
 }
 @media screen and (min-width:500px){
     .all__tech--container {
@@ -35,6 +37,7 @@
     justify-content: center;
     align-items:center;
     background-color: rgba(0, 0, 0, 0.631);
+    backdrop-filter: blur(10px);
 }
 .tech__name {
     font-size: 4rem;

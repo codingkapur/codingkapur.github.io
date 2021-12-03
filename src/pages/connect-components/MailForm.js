@@ -14,7 +14,7 @@ const MailForm = () => {
         mailFormOpen ? "mail__form--container active" : "mail__form--container"
       }
     >
-      <p className="form__title">We're Halfway There!</p>
+      <p className="form__title">Commencing Virtual Handshake!</p>
       <RiCloseCircleFill className="close-mail-btn" onClick={closeMailForm} />
       <form action="submit" className="form-container" onSubmit={handleSubmit}>
         <div className="form-control">

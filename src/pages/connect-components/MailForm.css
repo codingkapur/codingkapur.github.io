@@ -10,7 +10,7 @@
   backdrop-filter: blur(30px);
   transition: all 1s ease;
   z-index: 3;
-  box-shadow: -3px -2px 12px rgba(107, 107, 107, 0.665);
+  box-shadow: -3px -2px 12px rgba(107, 107, 107, 0.152);
   border: 1px rgba(255, 255, 255, 0.172);
   border-style:solid;
 }
@@ -27,11 +27,13 @@
 }
 .form__title {
   text-align: center;
-  border-bottom: 2px solid #fff;
   text-transform: uppercase;
   padding: 0.5rem;
   font-size: 2rem;
+  border-bottom: 2px solid #fff;
+
 }
+
 .close-mail-btn {
   position: absolute;
   top: 5px;
@@ -74,7 +76,8 @@
   height: 75px;
 }
 .form-control__input:focus {
-  outline: 2px solid rgb(89, 55, 242);
+  /* outline: 2px solid rgb(89, 55, 242); */
+  outline: none;
 }
 .form-control__input:focus + .form-control__label span {
   color: rgb(89, 55, 242);
