@@ -8,6 +8,7 @@ const AppProvider = ({ children }) => {
   const [width, setWidth] = useState(window.innerWidth);
   const [activeOption, setActiveOption] = useState("1");
   const [mailFormOpen, setMailFormOpen] = useState(false);
+  const [messageStatus, setMessageStatus] = useState(false);
 
 
   const checkWidth = () => {
@@ -70,6 +71,8 @@ const AppProvider = ({ children }) => {
         mailFormOpen,
         openMailForm,
         closeMailForm, 
+        messageStatus,
+        setMessageStatus
       }}
     >
       {children}
