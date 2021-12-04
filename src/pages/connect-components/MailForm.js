@@ -41,6 +41,7 @@ const MailForm = () => {
           }),
         }
       );
+
       if (res) {
         //Empty the fields
         setMailData({

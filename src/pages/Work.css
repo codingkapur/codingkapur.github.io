@@ -1,0 +1,19 @@
+.work__page--container {
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.work__icon {
+    font-size: 5rem;
+}
+.work__info {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+.test {
+    color: #fff;
+    font-size: 2rem;
+}
