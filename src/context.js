@@ -9,50 +9,7 @@ const AppProvider = ({ children }) => {
   const [activeOption, setActiveOption] = useState("1");
   const [mailFormOpen, setMailFormOpen] = useState(false);
   const [messageStatus, setMessageStatus] = useState(false);
-
-  const [projectData, setProjectData] = useState([]);
-  const [frontendProjects, setFrontendProjects] = useState([]);
-  const [fullStackProjects, setFullStackProjects] = useState([]);
-  const [loading, setLoading] = useState(false);
-
-  const fetchProjectData = async () => {
-    setLoading(true);
-    try {
-      const res = await fetch(
-        "https://raghavkapur-contact-default-rtdb.firebaseio.com/projectsData.json"
-      );
-      const data = await res.json();
-      if (data) {
-        const projectsArray = [];
-        for (const entry of Object.entries(data)) {
-          projectsArray.push(entry[1]);
-        }
-        setProjectData([...projectsArray]);
-      } else {
-        console.log("Unable to load projects at the moment");
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  };
-  const organizeProjects = () => {
-    let items;
-    items = projectData.filter((project) => project.type === "Frontend");
-    if (items.length > 0) {
-      setFrontendProjects(items);
-    } else {
-      // console.log("No items in this category");
-    }
-
-    items = projectData.filter((project) => project.type === "Full Stack");
-    if (items.length > 0) {
-      setFullStackProjects(items);
-    } else {
-      console.log("No items in this category");
-    }
-    setLoading(false);
-  };
-
+  
   const checkWidth = () => {
     setWidth(window.innerWidth);
     if (width > 500) {
@@ -114,11 +71,6 @@ const AppProvider = ({ children }) => {
         closeMailForm,
         messageStatus,
         setMessageStatus,
-        fetchProjectData,
-        loading,
-        organizeProjects,
-        frontendProjects,
-        fullStackProjects
       }}
     >
       {children}

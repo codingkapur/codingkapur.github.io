@@ -23,6 +23,8 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     color: #000;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275);
+
 }
 /* LINKS CONTAINER */
 .navbar__links--container {
@@ -56,6 +58,8 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275);
+
 }
 .navbar__link:hover, .navbar__link:active{
     transform: scale(1.1);

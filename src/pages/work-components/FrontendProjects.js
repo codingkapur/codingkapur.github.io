@@ -1,20 +1,20 @@
-import { useGlobalContext } from "../context";
-const FrontendProjects = () => {
-  const { frontendProjects } = useGlobalContext();
+const FrontendProjects = ({ frontendProjects }) => {
   return (
     <div className="projects__frontend--container projects__category--container">
-      <p className="category__title">
-        FIGMA DESIGNS TO FULLY RESPONSIVE WEBSITES
-      </p>
+      <p className="category__title">DESIGN TO DEPLOYMENT.</p>
+      <p className="category__subtitle">FULLY RESPONSIVE</p>
+
       <div className="projects">
         {frontendProjects.map((project, index) => {
           return (
             //Indiividual Project
-            <a href={project.deploymentURL} target="_blank" key = {index}>
-              <div
-                key={index}
-                className="individual__project"
-              >
+            <a
+              href={project.deploymentURL}
+              target="_blank"
+              key={index}
+              rel="noreferrer"
+            >
+              <div key={index} className="individual__project">
                 <p className="project__display--name">{project.projectName}</p>
                 {/* ON HOVER */}
                 <div className="project__display--hover">

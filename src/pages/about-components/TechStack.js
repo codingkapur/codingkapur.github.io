@@ -1,11 +1,11 @@
 import { techStackItems } from "./data";
 import "./TechStack.css";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const TechStack = () => {
   //Type Writer Text Effect
   const [typetext, setTypetext] = useState("");
-  
+
   const titleString = "Tech Stack:";
   let i = 0;
   const speed = 150;

@@ -1,5 +1,4 @@
 .work__page--container {
-    border: 1px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,3 +16,67 @@
     color: #fff;
     font-size: 2rem;
 }
+.projects__container {
+    background-color: rgba(0, 0, 0, 0.426);
+    backdrop-filter: blur(10px);
+    min-height: 90vh;
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .category__title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.453);
+  }
+  .category__subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem 0;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.453);
+  }
+  .projects {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    gap: 1rem;
+  }
+  .individual__project {
+    height: 150px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.905);
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .project__display--name {
+    display: block;
+    font-size: 2rem;
+    color: rgb(89, 55, 242);
+  }
+  .project__display--description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .project__display--tech {
+    font-size: 0.8rem;
+  }
+  .project__display--hover {
+    display: none;
+  }
+  .individual__project:hover .project__display--hover {
+    display: block;
+  }
+  .individual__project:hover .project__display--name {
+    display: none;
+    transition: 1s ease;
+  }
+  
