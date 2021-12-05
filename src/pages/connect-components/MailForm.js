@@ -24,7 +24,9 @@ const MailForm = () => {
   //Connect with Firebase
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const { sender_name, sender_email, sender_message } = mailData;
+    
     if (
       sender_name.trim() === "" ||
       sender_message.trim() === "" ||
@@ -50,7 +52,6 @@ const MailForm = () => {
         e.target,
         process.env.REACT_APP_EMAILJS_USER_ID
       );
-
       if (res) {
         //Empty the fields
         setMailData({
@@ -79,7 +80,7 @@ const MailForm = () => {
             type="text"
             name="sender_name"
             className="form-control__input"
-            value={mailData.name}
+            value={mailData.sender_name}
             onChange={sendMessage}
           />
           <label className="form-control__label" autoComplete="off">
@@ -91,7 +92,7 @@ const MailForm = () => {
             type="text"
             name="sender_email"
             className="form-control__input"
-            value={mailData.email}
+            value={mailData.sender_email}
             onChange={sendMessage}
           />
           <label className="form-control__label">
@@ -103,7 +104,7 @@ const MailForm = () => {
             type="text"
             name="sender_message"
             className="form-control__input form-control__input-area"
-            value={mailData.message}
+            value={mailData.sender_message}
             onChange={sendMessage}
           />
           <label className="form-control__label">
