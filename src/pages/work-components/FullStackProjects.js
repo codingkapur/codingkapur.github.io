@@ -2,8 +2,7 @@ const FullStackProjects = ({ fullstackProjects }) => {
   return (
     <div className="projects__frontend--container projects__category--container">
       <p className="category__title">
-        End to End Solutions
-        Front end back end CICD
+        END TO END SOLUTIONS.
       </p>
       <div className="projects">
         {fullstackProjects.map((project, index) => {
