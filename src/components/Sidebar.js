@@ -41,7 +41,7 @@ const Sidebar = () => {
       </div>
       <div className="social__links--container">
         <p onClick={externalRedirect} id="linkedin" className="social__link">
-          <AiFillLinkedin  />
+          <AiFillLinkedin />
         </p>
         <p onClick={externalRedirect} id="github">
           <AiFillGithub className="social__link" />

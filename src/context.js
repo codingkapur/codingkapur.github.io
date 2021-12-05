@@ -36,7 +36,6 @@ const AppProvider = ({ children }) => {
   const externalRedirect = (e) => {
     console.log(e.currentTarget.id);
     if (e.currentTarget.id === "linkedin") {
-      // window.location.href = "https://www.linkedin.com/in/raghavkapur/";
       window.open("https://www.linkedin.com/in/raghavkapur/", "_blank");
     }
     if (e.currentTarget.id === "github") {

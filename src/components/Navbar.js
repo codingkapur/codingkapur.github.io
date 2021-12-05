@@ -22,10 +22,12 @@ const Navbar = () => {
             <p className="navbar__link">Connect</p>
           </Link>
         </div>
-        <FaBars
+        <div
           className="sidebar__toggle--btn open-sidebar"
           onClick={openSidebar}
-        />
+        >
+          <FaBars />
+        </div>
       </div>
     </div>
   );

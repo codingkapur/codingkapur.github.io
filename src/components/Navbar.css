@@ -7,6 +7,7 @@
     font-size: 1.5rem;
     z-index: 10;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.337);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +24,7 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     color: #000;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275);
-
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275)
 }
 /* LINKS CONTAINER */
 .navbar__links--container {
@@ -38,10 +38,12 @@
     right: 1rem;
     cursor: pointer;
     transition: 0.3s;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275)
 }
 .sidebar__toggle--btn:hover {
-    transform: scale(1.1);
+    transform: rotate(180deg) scale(1.1);
 }
+
 /* RESPONSIVE NAVBAR */
 @media screen and (max-width: 500px){
     .navbar__links--container {
@@ -58,8 +60,7 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275);
-
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275)
 }
 .navbar__link:hover, .navbar__link:active{
     transform: scale(1.1);

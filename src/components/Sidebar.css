@@ -1,16 +1,21 @@
 .sidebar__container {
-  position: absolute;
-  height: 100%;
+  position:fixed;
+  height: 100vh;
   width: 100%;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 30;
   display: flex;
   flex-direction: column;
   border: 1px solid #fff;
-  transform: translate(-100%);
+  transform: translate(100%);
   transition: 0.3s ease-in;
-  background: linear-gradient(90deg,rgb(89, 55, 242), rgb(0, 0, 0),rgb(255, 255, 255) );
+  background: linear-gradient(
+    90deg,
+    rgb(89, 55, 242),
+    rgb(0, 0, 0),
+    rgb(255, 255, 255)
+  );
   background-repeat: no-repeat;
   background-size: 400% 300%;
 }
@@ -40,18 +45,21 @@
 .sidebar__logo {
   text-transform: uppercase;
   color: #000;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275);
 }
 
 .logo-text-span {
-  color:#fff;
+  color: #fff;
 }
 .close-sidebar__btn {
   transition: 0.3s;
   cursor: pointer;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275);
 }
 .close-sidebar__btn:hover {
   transform: scale(1.1);
 }
+
 .sidebar__links--container {
   display: flex;
   flex-direction: column;
@@ -67,6 +75,7 @@
   padding: 1rem 1rem;
   width: 100%;
   text-align: center;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.275);
 }
 .sidebar--link:hover {
   background-color: rgb(255, 255, 255);

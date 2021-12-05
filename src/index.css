@@ -20,9 +20,11 @@ a {
 }
 
 .app__container {
+  position: relative;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   body {
