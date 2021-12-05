@@ -3,14 +3,15 @@ import { useGlobalContext } from "../../context";
 import { RiCloseCircleFill } from "react-icons/ri";
 import StatusMessage from "./StatusMessage";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 const MailForm = () => {
   const { mailFormOpen, closeMailForm, messageStatus, setMessageStatus } =
     useGlobalContext();
   const [mailData, setMailData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    sender_name: "",
+    sender_email: "",
+    sender_message: "",
   });
 
   let name, value;
@@ -23,31 +24,39 @@ const MailForm = () => {
   //Connect with Firebase
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { name, email, message } = mailData;
-    if (name.trim() === "" || message.trim() === "") {
+    const { sender_name, sender_email, sender_message } = mailData;
+    if (
+      sender_name.trim() === "" ||
+      sender_message.trim() === "" ||
+      sender_email.trim() === ""
+    ) {
       alert("Fill in all the fields or else what's the point my friend?");
     } else {
-      const res = fetch(
-        "https://raghavkapur-contact-default-rtdb.firebaseio.com/contactMessages.json",
-        {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            message,
-          }),
-        }
+      const res = await fetch(process.env.REACT_APP_FIREBASE_CONTACTS, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          sender_name,
+          sender_email,
+          sender_message,
+        }),
+      });
+
+      emailjs.sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_EMAILJS_USER_ID
       );
 
       if (res) {
         //Empty the fields
         setMailData({
-          name: "",
-          email: "",
-          message: "",
+          sender_name: "",
+          sender_email: "",
+          sender_message: "",
         });
         setMessageStatus(true);
       } else {
@@ -68,7 +77,7 @@ const MailForm = () => {
         <div className="form-control">
           <input
             type="text"
-            name="name"
+            name="sender_name"
             className="form-control__input"
             value={mailData.name}
             onChange={sendMessage}
@@ -80,7 +89,7 @@ const MailForm = () => {
         <div className="form-control">
           <input
             type="text"
-            name="email"
+            name="sender_email"
             className="form-control__input"
             value={mailData.email}
             onChange={sendMessage}
@@ -92,7 +101,7 @@ const MailForm = () => {
         <div className="form-control">
           <textarea
             type="text"
-            name="message"
+            name="sender_message"
             className="form-control__input form-control__input-area"
             value={mailData.message}
             onChange={sendMessage}

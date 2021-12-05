@@ -9,9 +9,7 @@ const Work = () => {
 
   const fetchProjectData = async () => {
     setLoading(true);
-    const res = await fetch(
-      "https://raghavkapur-contact-default-rtdb.firebaseio.com/projectsData.json"
-    );
+    const res = await fetch(process.env.REACT_APP_FIREBASE_PROJECTS);
     const data = await res.json();
     let projects = [];
     Object.entries(data).forEach(([key, value]) => {
