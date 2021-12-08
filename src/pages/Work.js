@@ -28,12 +28,16 @@ const Work = () => {
   }, []);
 
   let frontendProjects = [];
+  let dataFetchProjects = []
   let fullstackProjects = [];
   frontendProjects = projectData.filter(
     (project) => project.type === "Frontend"
   );
   fullstackProjects = projectData.filter(
     (project) => project.type === "Full Stack"
+  );
+  dataFetchProjects = projectData.filter(
+    (project) => project.type === "Data Fetching"
   );
 
   return (
@@ -44,6 +48,7 @@ const Work = () => {
         <Projects
           frontendProjects={frontendProjects}
           fullstackProjects={fullstackProjects}
+          dataFetchProjects={dataFetchProjects}
         />
       )}
     </div>

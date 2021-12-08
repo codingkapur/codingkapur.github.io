@@ -29,6 +29,7 @@
     text-align: center;
     margin: 1rem 0 0 0;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.453);
+    text-transform: uppercase;
   }
   .category__subtitle {
     font-size: 1rem;
