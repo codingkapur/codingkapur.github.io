@@ -13,7 +13,7 @@ const Hero = () => {
           Engineering web solutions for individuals and businesses around the
           world!
         </p>
-        <p className="hero__learn-more-btn btn">Learn More</p>
+        {/* <p className="hero__learn-more-btn btn">Learn More</p> */}
       </div>
     </main>
   );

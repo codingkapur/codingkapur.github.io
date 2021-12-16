@@ -1,5 +1,5 @@
 .sidebar__container {
-  position:fixed;
+  position: fixed;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -85,14 +85,13 @@
   transform: translate(0);
   animation: gradient 0.5s ease-in;
 }
-
 .social__links--container {
   display: flex;
-  /* flex-direction: column; */
-  align-items: center;
+  place-items: center;
   justify-content: center;
 }
 .social__link {
+  display: flex;
   margin: 0.5rem;
   color: rgb(0, 0, 0);
   font-size: 1.5rem;

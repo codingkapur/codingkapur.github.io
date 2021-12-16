@@ -5,6 +5,7 @@ import {
   AiFillInstagram,
   AiFillGithub,
   AiFillYoutube,
+  AiFillTwitterSquare,
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
@@ -43,14 +44,17 @@ const Sidebar = () => {
         <p onClick={externalRedirect} id="linkedin" className="social__link">
           <AiFillLinkedin />
         </p>
-        <p onClick={externalRedirect} id="github">
-          <AiFillGithub className="social__link" />
+        <p onClick={externalRedirect} id="twitter" className="social__link">
+          <AiFillTwitterSquare />
         </p>
-        <p onClick={externalRedirect} id="youtube">
-          <AiFillYoutube className="social__link" />
+        <p onClick={externalRedirect} id="github" className="social__link">
+          <AiFillGithub />
         </p>
-        <p onClick={externalRedirect} id="instagram">
-          <AiFillInstagram className="social__link" />
+        <p onClick={externalRedirect} id="youtube" className="social__link">
+          <AiFillYoutube />
+        </p>
+        <p onClick={externalRedirect} id="instagram" className="social__link">
+          <AiFillInstagram />
         </p>
       </div>
     </div>

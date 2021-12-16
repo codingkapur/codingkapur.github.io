@@ -34,7 +34,6 @@ const AppProvider = ({ children }) => {
     setIsSidebarOpen(false);
   };
   const externalRedirect = (e) => {
-    console.log(e.currentTarget.id);
     if (e.currentTarget.id === "linkedin") {
       window.open("https://www.linkedin.com/in/raghavkapur/", "_blank");
     }
@@ -46,6 +45,9 @@ const AppProvider = ({ children }) => {
     }
     if (e.currentTarget.id === "instagram") {
       window.open("https://instagram.com/misterkapur", "_blank");
+    }
+    if (e.currentTarget.id === "twitter") {
+      window.open("https://twitter.com/misterkapur", "_blank");
     }
   };
 

@@ -6,6 +6,7 @@ import {
   AiFillInstagram,
   AiFillGithub,
   AiFillYoutube,
+  AiFillTwitterSquare,
 } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import { useGlobalContext } from "../context";
@@ -63,6 +64,10 @@ const Connect = () => {
             <p onClick={externalRedirect} id="linkedin">
               <AiFillLinkedin className="social__link--connect" />
             </p>
+            <p className="social__connect--title">Leave me a message on Twitter</p>
+            <p onClick={externalRedirect} id="twitter">
+              <AiFillTwitterSquare className="social__link--connect" />
+            </p>
 
             <p className="social__connect--title">
               Check out some photos and also send me a DM on Instagram.
@@ -80,7 +85,7 @@ const Connect = () => {
               <AiFillYoutube className="social__link--connect" />
             </p>
             <p className="social__connect--title">
-              Hit me up on GitHub? Or any of the above..
+              You really want to read code? See you on GitHub then!
             </p>
             <p onClick={externalRedirect} id="github">
               <AiFillGithub className="social__link--connect" />
